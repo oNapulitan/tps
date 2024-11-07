@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../../imgs/icon.png" type="image/x-icon">
+</head>
+</head>
+<body>
+        <form>
+                <div class="bg">
+                    <h1 class="title">Calcolatrice</h1>
+                    <br>
+                  <input type="text" id="valore">
+                  <br>
+                <br> 
+                <input class="btn-outline-ice" type="button" value="7" onclick="setValore(7)">
+                <input class="btn-outline-ice" type="button" value="8" onclick="setValore(8)">
+                <input class="btn-outline-ice" type="button" value="9" onclick="setValore(9)">
+                <input class="btn-outline-ice" type="button" value="*" onclick="setValore('*')">
+                <br>
+                <br>
+                <input class="btn-outline-ice" type="button" value="4" onclick="setValore(4)">
+                <input class="btn-outline-ice" type="button" value="5" onclick="setValore(5)">
+                <input class="btn-outline-ice" type="button" value="6" onclick="setValore(6)">
+                <input class="btn-outline-ice" type="button" value="+" onclick="setValore('+')">
+                <br>
+                <br>
+                <input class="btn-outline-ice" type="button" value="1" onclick="setValore(1)">
+                <input class="btn-outline-ice" type="button" value="2" onclick="setValore(2)">
+                <input class="btn-outline-ice" type="button" value="3" onclick="setValore(3)">
+                <input class="btn-outline-ice" type="button" value="/" onclick="setValore('/')">
+                <br>
+                <br>
+                <input class="btn-outline-ice" type="button" value="=" onclick="calc()">
+                <input class="btn-outline-ice" type="button" value="0" onclick="setValore(0)">
+                <input class="btn-outline-ice" type="button" value="C" onclick="cancella()">
+                
+                <input class="btn-outline-ice" type="button" value="-" onclick="setValore('-')">                
+            </div>
+        </form>
+
+</body>
+    <script src="script.js"></script>
+</html>

@@ -18,6 +18,7 @@ function readFile(input) {
     reader.onerror = function() {
       alert(reader.error);
     };
+    draw();
 }
 
 function draw() {

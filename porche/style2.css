@@ -1,0 +1,21 @@
+.map-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .btn-directions {
+    display: inline-block;
+    background-color: #e60000;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-directions:hover {
+    background-color: #c10000;
+  }
+  

@@ -1,0 +1,30 @@
+{
+  "SUV": [
+    {
+      "model": "Porsche Panamera",
+      "price": "80,000€",
+      "year": "2024",
+      "image": "https://link-to-image.com/cayenne.jpg"
+    },
+    {
+      "model": "Porsche Macan",
+      "price": "60,000€",
+      "year": "2024",
+      "image": "https://link-to-image.com/macan.jpg"
+    }
+  ],
+  "Sport": [
+    {
+      "model": "Porsche 911",
+      "price": "120,000€",
+      "year": "2024",
+      "image": "https://link-to-image.com/911.jpg"
+    },
+    {
+      "model": "Porsche 718 Cayman",
+      "price": "70,000€",
+      "year": "2024",
+      "image": "https://link-to-image.com/718-cayman.jpg"
+    }
+  ]
+}

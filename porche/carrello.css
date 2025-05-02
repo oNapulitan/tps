@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  nav {
+    background-color: #111;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #e60000;
+  }
+  
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #e60000;
+    margin-top: 30px;
+  }
+  
+  .car-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+  }
+  
+  .car-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 220px;
+  }
+  
+  .car-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .car-item p {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .car-item button {
+    padding: 10px 15px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .car-item button:hover {
+    background-color: #c10000;
+  }
+  
+  #carrello {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  #lista-carrello {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #lista-carrello li {
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #lista-carrello button {
+    padding: 6px 12px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #lista-carrello button:hover {
+    background-color: #c10000;
+  }
+  

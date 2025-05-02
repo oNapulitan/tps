@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dettaglio Prodotto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="home.html"><img src="logo.png" alt="Logo" class="logo" height="100px" width="100px"></a>
+      <ul>
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="chi-siamo.html" class="nav-link">Chi Siamo</a></li>
+        <li><a href="prodotti.html" class="nav-link">Prodotti</a></li>
+        <li><a href="dove-siamo.html" class="nav-link">Dove Siamo</a></li>
+        <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+        <li><a href="account.html" class="nav-link">Account</a></li>
+        <li><a href="carrello.html" class="nav-link">Carrello</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="dettaglio-prodotto" style="padding: 40px; text-align: center;"></main>
+
+  <script>
+    
+    const auto = {
+      Porsche911: {
+        nome: "Porsche 911",
+        img: "Porsche 911.jpg",
+        descrizione: "Motore boxer, prestazioni eccezionali, design iconico.",
+        prezzo: "150.000€"
+      },
+      PorscheMacan: {
+        nome: "Porsche Macan",
+        img: "Porsche Macan.jpg",
+        descrizione: "SUV compatto, elegante e sportivo.",
+        prezzo: "80.000€"
+      },
+      Panamera: {
+        nome: "Porsche Panamera",
+        img: "porsche panamera.jpg",
+        descrizione: "Comfort di una berlina, potenza da sportiva.",
+        prezzo: "120.000€"
+      },
+      Cayman: {
+        nome: "Porsche 718 Cayman",
+        img: "Porsche 718 Cayman.jpg",
+        descrizione: "Agilità, potenza, piacere di guida puro.",
+        prezzo: "70.000€"
+      }
+    };
+
+   
+    const params = new URLSearchParams(window.location.search);
+    const modello = params.get("modello");
+    const container = document.getElementById("dettaglio-prodotto");
+
+    if (auto[modello]) {
+      const a = auto[modello];
+      container.innerHTML = `
+        <h2>${a.nome}</h2>
+        <img src="${a.img}" alt="${a.nome}" style="max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); margin: 20px 0;">
+        <p style="font-size: 18px; margin-bottom: 10px;">${a.descrizione}</p>
+        <p style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">Prezzo: ${a.prezzo}</p>
+        <button onclick="aggiungiAlCarrello('${a.nome}')" style="padding: 12px 20px; background-color: #e60000; color: white; border: none; border-radius: 6px; cursor: pointer;">Aggiungi al carrello</button>
+      `;
+    } else {
+      container.innerHTML = "<p>Modello non trovato.</p>";
+    }
+
+    function aggiungiAlCarrello(modello) {
+      let carrello = JSON.parse(localStorage.getItem("carrello")) || [];
+      carrello.push(modello);
+      localStorage.setItem("carrello", JSON.stringify(carrello));
+      alert(modello + " aggiunto al carrello!");
+    }
+  </script>
+
+</body>
+</html>
+

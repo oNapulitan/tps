@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+  <product>
+    <id>S1</id>
+    <title>Seiko Prospex Diver</title>
+    <type>Orologio</type>
+    <description>Orologio subacqueo professionale con movimento automatico, impermeabile fino a 200 metri.</description>
+    <price>1200.00</price>
+    <image>./img/seiko_prospex.webp</image>
+  </product>
+  <product>
+    <id>S2</id>
+    <title>Seiko Presage Cocktail Time</title>
+    <type>Orologio</type>
+    <description>Orologio elegante con quadrante ispirato ai cocktail giapponesi e movimento automatico.</description>
+    <price>450.00</price>
+    <image>./img/seiko_presage.webp</image>
+  </product>
+  <product>
+    <id>S3</id>
+    <title>Seiko Astron GPS Solar</title>
+    <type>Orologio</type>
+    <description>Orologio high-tech con tecnologia GPS Solar che si regola automaticamente in base al fuso orario.</description>
+    <price>2100.00</price>
+    <image>./img/seiko_astron.webp</image>
+  </product>
+</products>

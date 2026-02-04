@@ -1,0 +1,84 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.scheda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 60px auto;
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.foto {
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.foto img {
+    max-width: 100%;
+    max-height: 450px;
+    border-radius: 16px;
+    transition: transform 0.4s ease;
+}
+
+.foto img:hover {
+    transform: scale(1.05);
+}
+
+
+.testi {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testi h2 {
+    font-size: 2.4rem;
+    color: #222;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.prezzo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6b00;
+    margin: 15px 0 25px;
+}
+
+
+.info {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .scheda {
+        grid-template-columns: 1fr;
+    }
+
+    .foto {
+        padding: 20px;
+    }
+
+    .testi {
+        padding: 30px;
+    }
+
+    .testi h2 {
+        font-size: 2rem;
+    }
+}

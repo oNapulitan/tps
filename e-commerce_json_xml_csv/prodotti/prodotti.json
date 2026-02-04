@@ -1,0 +1,26 @@
+[
+  {
+    "id": "C1",
+    "title": "Cartier Tank Must",
+    "type": "Orologio",
+    "description": "Iconico orologio Cartier dal design rettangolare, elegante e senza tempo, con movimento al quarzo.",
+    "price": "3950.00",
+    "image": "./img/cartier_tank_must.webp"
+  },
+  {
+    "id": "C2",
+    "title": "Cartier Santos de Cartier",
+    "type": "Orologio",
+    "description": "Orologio sportivo di lusso con cassa squadrata, bracciale in acciaio e movimento automatico.",
+    "price": "7800.00",
+    "image": "./img/cartier_santos.webp"
+  },
+  {
+    "id": "C3",
+    "title": "Cartier Ballon Bleu",
+    "type": "Orologio",
+    "description": "Elegante orologio rotondo con corona cabochon blu e design raffinato, simbolo di lusso Cartier.",
+    "price": "6900.00",
+    "image": "./img/cartier_ballon_bleu.webp"
+  }
+]
